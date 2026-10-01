@@ -1,4 +1,5 @@
 import student
+print('Welcome to Student Management System')
 student_details=[['Arun', 26, 91, 12, 'c'],['Sana', 13, 89, 11, 'a']]
 print('''Menu: 1)Add a student
 		2)Display student details
