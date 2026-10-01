@@ -6,8 +6,9 @@ while x=='y' or x=='Y':
 	print('''Menu: 1)Add a student
 		2)Display student details
 		3)Search for a student
-		4)Delete a student''')
-	ch=int(input('Enter your choice(1,2,3,4):'))
+		4)Delete a student
+		5)Update student details''')
+	ch=int(input('Enter your choice(1,2,3,4,5):'))
 	if ch==1:
 		print(student.add_student(student_details))
 	elif ch==2:
@@ -16,6 +17,8 @@ while x=='y' or x=='Y':
 		student.search_student(student_details)
 	elif ch==4:
 		print(student.delete_student(student_details))
+	elif ch==5:
+		student.update_student(student_details)
 	else:
 		print('Invalid choice.')
 	x=input('Do you wish to choose again?(y/n):')
